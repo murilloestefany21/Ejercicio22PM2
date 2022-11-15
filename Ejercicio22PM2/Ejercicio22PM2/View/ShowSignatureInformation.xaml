@@ -17,13 +17,8 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
-                <Image x:Name="imageSignature" Grid.Row="0" Grid.Column="0" HeightRequest="250" WidthRequest="250" Margin="2" VerticalOptions="Start" HorizontalOptions="Center"/>
+                <Image x:Name="imageSignature" Grid.Row="0" Grid.Column="0" HeightRequest="200" WidthRequest="200" Margin="2" VerticalOptions="Center" HorizontalOptions="Center"/>                <Label Text="Nombre" Grid.Row="1" Grid.Column="0" TextColor="DeepPink" FontSize="20" Margin="5"></Label>                <Label x:Name="name" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" TextColor="LightPink" FontSize="12" Margin="5"></Label>                <Label Text="Descripcion" Grid.Row="2" Grid.Column="0" TextColor="DeepPink" FontSize="20" Margin="5"></Label>                <Label x:Name="description" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" TextColor="LightPink" FontSize="12" Margin="5"></Label>
 
-                <Label Text="Nombre" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" TextColor="DeepPink" FontSize="14" Margin="5"></Label>
-                <Label x:Name="name" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" TextColor="Black"></Label>
-                <Label Text="Descripcion" Grid.Row="2" Grid.Column="0" FontAttributes="Bold" TextColor="DeepPink" FontSize="14" Margin="5"></Label>
-                <Label x:Name="description" Grid.Row="2" Grid.Column="0" HorizontalOptions="Center" TextColor="Black"></Label>
-              
             </Grid>
             </StackLayout>
         

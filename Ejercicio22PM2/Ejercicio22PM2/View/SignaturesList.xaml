@@ -22,11 +22,9 @@
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                                 <ColumnDefinition Width="*"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding code}" Grid.Row="0" Grid.Column="0" TextColor="DeepPink"></Label>
-                            <Label x:Name="txtName" Text="{Binding name}" Grid.Row="1" Grid.Column="1" TextColor="LightPink" Padding="10"></Label>
-                            <Label Text="{Binding description}" Grid.Row="0" Grid.Column="2" TextColor="DeepPink"></Label>
-                            <Label x:Name="imageCodeText" Text="{Binding imageCode}" Grid.Row="3" Grid.Column="0" TextColor="LightPink" IsVisible="false"></Label>
-                           
+
+                            <Label Text="{Binding code}" Grid.Row="0" Grid.Column="0" TextColor="DeepPink" FontSize="14" Margin="5"></Label>                            <Label Text="{Binding name}" Grid.Row="0" Grid.Column="1" TextColor="LightPink" FontSize="14" Margin="5"></Label>                            <Label Text="{Binding description}" Grid.Row="0" Grid.Column="2" TextColor="DeepPink" FontSize="14" Margin="5"></Label>                            <Label x:Name="imageCodeText" Text="{Binding imageCode}" Grid.Row="0" Grid.Column="3" TextColor="LightPink" FontSize="14" Margin="5"></Label>
+
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
