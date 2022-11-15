@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="Ejercicio22PM2.MainPage"
+             BackgroundColor="White">
+
+    <StackLayout>
+        <Label Text="Ejercicio 2.2"  FontSize="20" HorizontalOptions="Center" TextColor="Black" />
+        <Image Source="https://www.linkpicture.com/q/logoGC.jpg" HorizontalOptions="Center" />
+        <forms:SignaturePadView x:Name="PadView" StrokeColor="Purple"
+                            BackgroundColor="White"
+                            StrokeWidth="3"
+                            WidthRequest="280"
+                            HeightRequest="360"/>
+
+        <Label Text="Nombre"  Margin="5" TextColor="Black"></Label>
+        <Entry x:Name="name" Placeholder="*" Keyboard="Text" TextColor="Black"></Entry>
+        <Label Text="Descripcion"  Margin="5" TextColor="Black"></Label>
+        <Entry x:Name="description" Placeholder="*" Keyboard="Text" TextColor="Black"></Entry>
+
+        <Button Text="Guardar" Clicked="SaveButton_Clicked"></Button>
+        <Button Text="Limpiar" Clicked="ClearButton_Clicked"></Button>
+        <Button Text="Lista Firmas" Clicked="ViewSignaturesButton_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
