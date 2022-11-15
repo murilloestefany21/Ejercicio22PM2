@@ -6,22 +6,22 @@
              BackgroundColor="White">
 
     <StackLayout>
-        <Label Text="Ejercicio 2.2"  FontSize="20" HorizontalOptions="Center" TextColor="Black" />
+        <Frame BackgroundColor="LightPink" Padding="24" CornerRadius="0">            <Label Text="Firma Digital" HorizontalTextAlignment="Center" TextColor="DeepPink" FontSize="36"/>        </Frame>
         <Image Source="https://www.linkpicture.com/q/logoGC.jpg" HorizontalOptions="Center" />
-        <forms:SignaturePadView x:Name="PadView" StrokeColor="Purple"
+        <forms:SignaturePadView x:Name="PadView" StrokeColor="Black"
                             BackgroundColor="White"
                             StrokeWidth="3"
                             WidthRequest="280"
                             HeightRequest="360"/>
 
-        <Label Text="Nombre"  Margin="5" TextColor="Black"></Label>
-        <Entry x:Name="name" Placeholder="*" Keyboard="Text" TextColor="Black"></Entry>
-        <Label Text="Descripcion"  Margin="5" TextColor="Black"></Label>
-        <Entry x:Name="description" Placeholder="*" Keyboard="Text" TextColor="Black"></Entry>
+        <Label Text="Nombre"  TextColor="DeepPink" FontSize="14" Margin="5"></Label>
+        <Entry x:Name="name" Placeholder="" Keyboard="Text" TextColor="Black" FontSize="14" Margin="5" HorizontalTextAlignment="Start" BackgroundColor="LightPink"></Entry>
+        <Label Text="Descripcion"  TextColor="DeepPink" FontSize="14" Margin="5"></Label>
+        <Entry x:Name="description" Placeholder="" Keyboard="Text" TextColor="Black" FontSize="14" Margin="5" HorizontalTextAlignment="Start" BackgroundColor="LightPink"></Entry>
 
-        <Button Text="Guardar" Clicked="SaveButton_Clicked"></Button>
-        <Button Text="Limpiar" Clicked="ClearButton_Clicked"></Button>
-        <Button Text="Lista Firmas" Clicked="ViewSignaturesButton_Clicked"></Button>
+        <Button Text="Guardar" Clicked="SaveButton_Clicked" BackgroundColor="#f7b7e0" Margin="5"></Button>
+        <Button Text="Limpiar" Clicked="ClearButton_Clicked" BackgroundColor="#f7b7e0" Margin="5"></Button>
+        <Button Text="Lista Firmas" Clicked="ViewSignaturesButton_Clicked" BackgroundColor="#f7b7e0" Margin="5"></Button>
     </StackLayout>
 
 </ContentPage>
